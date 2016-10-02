@@ -16,14 +16,18 @@
     <a-assets>
       <img id="ui1" src="img/Text.png">
     </a-assets>
-    <a-entity position="0 0 -5" mixin="font" text="text: Hello">
+
+    <a-entity material="color: blue" position="0 0 -5" mixin="font" text="text: Hello">
       <a-animation attribute="rotation" begin="click" repeat="3s" to="360 360 360"></a-animation>
+      <a-animation attribute="material.color" begin="click" to="red"></a-animation>
     </a-entity>
-    <a-entity position="0 5 -5" mixin="font" text="text: Hello">
+    <a-entity material="color: yellow" position="0 5 -5" mixin="font" text="text: Hello">
       <a-animation attribute="rotation" begin="click" repeat="3s" to="360 360 360"></a-animation>
+      <a-animation attribute="material.color" begin="click" to="red"></a-animation>
     </a-entity>
-    <a-entity position="5 0 -5" rotation="0 -60 0" mixin="font" text="text: Hello">
+    <a-entity material="color: purple" position="5 0 -5" rotation="0 -60 0" mixin="font" text="text: Hello">
       <a-animation attribute="rotation" begin="click" repeat="3s" to="360 360 360"></a-animation>
+      <a-animation attribute="material.color" begin="click" to="red"></a-animation>
     </a-entity>
 
 
