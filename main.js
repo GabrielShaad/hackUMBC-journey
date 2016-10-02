@@ -29,7 +29,7 @@ var falling = 'animation__yoyo="property: position; dir: alternate; easing: ease
 var dur = 'dur: ';
 var fallingTo = '; to: ';
 var colorAnim = '></a-animation><a-animation attribute="material.color" begin="click" to="'
-var textEnd = '"></a-animation><a-box opacity="0" height="0.5" width="3.5" depth="0" position="0.75 0.25 0"></a-box></a-entity>';
+var textEnd = '"></a-animation><a-box opacity="0" height="1" width="3.2" depth="0" position="1.6 0.25 0"></a-box></a-entity>';
 var startHeight = 3;
 var endHeight = 0;
 var d = 4;
