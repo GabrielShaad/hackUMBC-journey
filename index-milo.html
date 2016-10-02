@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello, World! - A-Frame</title>
+  <meta name="description" content="Hello, World! - A-Frame">
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <script>
+    
+  </script>
+  <a-scene>
+    <a-assets>
+      <img id="ui1" src="img/Test.png">
+    </a-assets>
+
+    <a-curvedimage src="#ui1" radius="30" theta-length="10" height="5" rotation="0 180 0" position="0 0 10" scale="1 1 1"></a-curvedimage>
+
+    <a-sky color="#fff"></a-sky>
+    <a-entity position="0 0 0">
+    </a-entity>
+    <a-camera position="0 0 0">
+      <a-cursor color="#333"></a-cursor>
+    </a-camera>
+  </a-scene>
+</body>
+
+</html>
