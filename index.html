@@ -10,17 +10,25 @@
   </head>
   <body>
     <a-scene>
-      <a-assets>
+      <!-- <a-assets>
         <img id="texture" src="texture.png">
-      </a-assets>
+      </a-assets> -->
 
-      <a-box color="#12F" width="1" height="1" depth="1"
-         position="0 0 -5" rotation="0 0 45" scale="1 1 1" >
+      <!-- <a-box color="#12F" width="1" height="1" depth="1"
+         position="0 0 -5" rotation="0 0 45" scale="1 1 1" > -->
     <!-- Animation will only play when the box is clicked. -->
-        <a-animation attribute="rotation" begin="click" repeat="3s" to="360 360 360"></a-animation>
-      </a-box>
+        <!-- <a-animation attribute="rotation" begin="click" repeat="3s" to="360 360 360"></a-animation>
+      </a-box> -->
 
-      <a-entity mixin="font" text="text: Hello"></a-entity>
+      <a-entity position="0 0 -5" mixin="font" text="text: Hello">
+        <a-animation attribute="rotation" begin="click" repeat="3s" to="360 360 360"></a-animation>
+      </a-entity>
+      <a-entity position="0 5 -5" mixin="font" text="text: Hello">
+        <a-animation attribute="rotation" begin="click" repeat="3s" to="360 360 360"></a-animation>
+      </a-entity>
+      <a-entity position="5 0 -5" rotation="0 -20 0" mixin="font" text="text: Hello">
+        <a-animation attribute="rotation" begin="click" repeat="3s" to="360 360 360"></a-animation>
+      </a-entity>
 
       <a-camera position="0 1.8 0">
         <a-cursor color="#2E3A87"></a-cursor>
