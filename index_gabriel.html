@@ -15,10 +15,16 @@
 </head>
 
 <body>
-  <a-scene id="text" vr-mode-ui="enabled: false">
-    <a-assets> 
+  <a-scene>
+    <a-assets>
     </a-assets>
+    <a-entity id="openning">
+      <a-entity id="0" material="color: blue" position="-4 3 -5" rotation="0 0 0" mixin="font" onclick="nextScene()" text="text: Welcome, Click here to start!"></a-entity>
+      <a-box opacity="0" height="3" width="6" depth="0" position="0 0 0"></a-box>
+    </a-entity>
+    <a-entity id="text">
 
+    </a-entity>
     <a-sky color="#fff"></a-sky>
     <a-entity position="0 0 0">
     </a-entity>
