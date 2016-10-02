@@ -1,9 +1,8 @@
 var currentScene = 0;
-$(document).ready(
-    
-    );
+
 function nextScene(){
     document.getElementById('openning').setAttribute('visible', 'false');
+    document.getElementById('end').setAttribute('visible', 'false');
     start();
 }
 
@@ -24,7 +23,8 @@ function start() {
 var textBeg = '<a-entity material="color: blue" ';
 var pos = 'position=';
 var rot = 'rotation=';
-var endOpen = 'mixin="font" text="text: ';
+var onclck = ' onclick="';
+var endOpen = ' mixin="font" text="text: ';
 var falling = 'animation__yoyo="property: position; dir: alternate; easing: easeInSine; loop: true;' ;
 var dur = 'dur: ';
 var fallingTo = '; to: ';
@@ -44,6 +44,7 @@ for(var i=0; i<8;i++){
     item+= '"' + coordinates[i][0] + ' ' + startHeight +' ' + coordinates[i][1] + '" ';
     item+= rot;
     item+= '"0 '+ coordinates[i][2] + ' 0" ';
+    item+=onclck+(i==answerIndex?'endScreen()"':'"');
     item+=endOpen + randomBin()+ '" ';
     item+=falling;
     item+=dur + (1000 + 3000*Math.random());
