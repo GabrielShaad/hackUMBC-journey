@@ -19,10 +19,11 @@ function randomBin(){
 function endScreen(){
     document.getElementById('text').setAttribute('visible', 'false');
     document.getElementById('end').setAttribute('visible', 'true');
+    levelNum++;
 }
 
 function start() {
-var textBeg = '<a-entity material="color: blue" ';
+var textBeg = '<a-entity material="color: #fff735" ';
 var pos = 'position=';
 var rot = 'rotation=';
 var endOpen = ' mixin="font" text="text: ';
@@ -43,12 +44,12 @@ var coordinates = [[-d/2,-d,0],[d/2,-d,0],[d,-d/2,-90],[d,d/2,-90],
 for(var i=0; i<8;i++){
     var item = textBeg;
     item+=pos;
-    item+= '"' + coordinates[i][0] + ' ' + startHeight +' ' + coordinates[i][1] + '" ';
+    item+= '"' + coordinates[i][0] + ' ' + startHeight*(levelNum) +' ' + coordinates[i][1] + '" ';
     item+= rot;
     item+= '"0 '+ coordinates[i][2] + ' 0" ';
     item+=endOpen + randomBin()+ '" ';
     item+=falling;
-    item+=dur + (1000 + 3000*Math.random())/levelNum;
+    item+=dur + (1000 + 3000*Math.random());
     item+= fallingTo + coordinates[i][0] + ' ' + endHeight + ' '+ coordinates[i][1] + '" ';
     item+= colorAnim + (i==answerIndex?"green":"red");
     item+=onclck+(i==answerIndex?'endScreen()"':'"');
