@@ -3,7 +3,7 @@ $( document ).ready(function() {
 var textBeg = '<a-entity material="color: blue" ';
 var pos = 'position=';
 var rot = 'rotation=';
-var textEnd = 'mixin="font" text="text: Hello"><a-animation attribute="rotation" begin="click" repeat="3s" to="360 360 360"></a-animation><a-animation attribute="material.color" begin="click" to="red"></a-animation></a-entity>';
+var textEnd = 'mixin="font" text="text: Hello"><a-animation attribute="material.color" begin="click" to="red"></a-animation><a-box opacity="0" height="0.5" width="1.5" depth="0" position="0.75 0.25 0"></a-box></a-entity>';
 var startHeight = 1.5;
 var d = 3
 //coordinates are x,z,rotation
