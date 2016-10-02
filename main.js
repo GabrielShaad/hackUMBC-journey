@@ -11,8 +11,8 @@ var startHeight = 3;
 var endHeight = 0;
 var d = 4;
 //coordinates are x,z,rotation
-var coordinates = [[-d/2,-d,0],[d/2,-d,0],[d,-d/2,-90],[d,d/2,-90],
-                  [-d/2,d,180],[d/2,d,180],[-d,-d/2,90],[-d,d/2,90]];
+var coordinates = [[-d/2,-d,22.5],[d/2,-d,-22.5],[d,-d/2,-67.5],[d,d/2,-112.5],
+                  [-d/2,d,-202.5],[d/2,d,-157.5],[-d,-d/2,-292.5],[-d,d/2,-247.5]];
 //var textCont = $('.text');
 for(var i=0; i<8;i++){
     var item = textBeg;
