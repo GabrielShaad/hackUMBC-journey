@@ -18,9 +18,10 @@
 <body>
   <a-scene>
     <a-assets>
-
+      <img id="title" src="img/title.png"></img>
     </a-assets>
     <a-entity id="openning">
+      <a-image src="#title" height="2" width="10" position="0.5 5 -5"></a-image>
       <a-entity id="0" material="color: blue" position="-4 3 -5" rotation="0 0 0" mixin="font" onclick="nextScene()" text="text: Welcome, Click here to start!">
         <a-box opacity="0" height="0.5" width="9" depth="0" position="4.5 0.25 0"></a-box>
       </a-entity>
