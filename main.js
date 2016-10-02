@@ -1,8 +1,9 @@
-var currentScene = 0;
+var levelNum = 1;
 
 function nextScene(){
     document.getElementById('openning').setAttribute('visible', 'false');
     document.getElementById('end').setAttribute('visible', 'false');
+    $('#text').html('');
     document.getElementById('text').setAttribute('visible', 'true');
     start();
 }
@@ -53,7 +54,6 @@ for(var i=0; i<8;i++){
     item+=onclck+(i==answerIndex?'endScreen()"':'"');
     item+= textEnd;
     console.log(item);
-    
     $('#text').append(item);
 }
 console.log('done');
